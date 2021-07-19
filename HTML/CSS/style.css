@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Container {
+    max-width: 1280px;
+    margin:0 auto;
+    padding: 0 2%;
+}
+.clear {clear: both;}
+header{
+    padding:  8px 0;
+    height: 75px;
+    background:#000000;
+}
+.logo{
+    float: left;
+
+}
+.logo img {
+    position: relative;
+    top: 1px ;
+    width: 100px;
+    height: 80px;
+    cursor: pointer;
+    
+}
+nav.menu li.selected {font-weight: bold;}
+nav.menu-desktop {
+    float: right;
+}
+nav.menu-desktop ul{
+    position: relative;
+    top: 20px;
+}
+nav.menu-desktop li{
+    display: inline-block;
+    padding:  15px;
+}
+nav.menu-desktop a {
+    color:white;
+    text-decoration:none;
+}
+nav.menu-desktop a:hover {
+    text-decoration: underline;
+    
+}
+/*SECTION MAIN */
+section.main-bg{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 100px 0 200px 0;
+    background-image: url(/var/www/html/PHP1/HTML/imagens/elliot..jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: right;
+    text-size-adjust: right;
+}
+section.main-bg > .Container{
+    position: relative;
+    z-index: 2;
+}
+.overlai{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    left: 0;
+    top: 0;
+}
+section.main-bg h2{
+    color: rgb(255, 17, 0);
+    text-align: center;
+    font-weight: normal;
+    font-size: 45px;    
+    text-shadow: #000 3px 3px 3px;
+}
+section.main-bg p {
+    color:rgb(62, 139, 46);
+    font-size: 18px;
+    margin-top:15px;
+    text-align: center;
+    text-shadow: #000 1px 1px 1px;
+
+}
+section.diferenciais{
+    text-align: center;
+    padding: 30px 0;
+   
+}
+.line-text{
+    color: #c90017;
+    display: inline-block;
+    position: relative;
+    text-shadow: #000 2px 3px 2px;
+}
+.line-text > div {
+    position: initial;
+    left: 0;
+    top: 0;
+    width: 50px;
+    height: 3px;
+    background: #c90017;
+    
+}
+.line-text h2 {
+    font-weight: normal;
+    font-size: 27px;
+}
+.imagens-diferenciais{
+    margin-top: 35px;
+}
+.box-imagem-single {
+    float: left;
+    width: 33.3%;
+    padding: 0 10px;
+}
+.box-imagem-single h2 {
+    color: rosybrown;
+    font-size: 40px;
+}
+.box-imagem-single p{
+    color: rosybrown;
+    font-weight: lighter;
+    font-family: 16px;
+}
+.box-imagem-single img{
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    transition: all 0.3s;
+    -webkit-transform:scale(0.7);
+        -moz-transform:scale(0.7); 
+   	-o-transform:scale(0.7);
+   transform:scale(0.7);
+     display: inline-block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-size: 100% 100% black; 
+    padding-bottom: 10px; 
+}
+
+.box-imagem-single img:hover {
+    /*-webkit-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);*/
+    -webkit-transform:scale(1.5); 
+      -moz-transform:scale(1.5); 
+        -o-transform:scale(1.5);
+       	   transform:scale(1.5);
+}
